@@ -4,8 +4,8 @@ st.markdown('<h2 style="text-align: center;">Numerical Methods using streamlit w
 st.markdown('<h4 style="text-align: center;">A guide for your complex formulas</h4>',  unsafe_allow_html=True)
 st.divider()
 
-col1, col2, col3 = st.columns(spec=[1,2,1])
-with col2.container(horizontal_alignment='center', width='stretch'):
+
+with st.container(horizontal_alignment='center', width='stretch'):
     method = st.selectbox(label='choose a method',width=600,
              options=['bisection method', 
                     'newton\'s ralph method',
